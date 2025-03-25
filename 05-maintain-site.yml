@@ -1,10 +1,12 @@
 ---
-name: install httpd server
-  hosts: n2
+
+- name: under maintenance
+  hosts: n3
   become: yes
 
-- name: Copy file to remote server
-  copy:
-    src: /path/to/local/file.txt
-    dest: /path/to/remote/destination/file.txt
+  tasks:
+  - name: update maintenance
+    copy:
+     src: maiantain.html
+     dest: /var/www/html/index.html
 ...
