@@ -9,12 +9,12 @@
       path: /home/ec2-user/new_dir
       state: directory
 
-
   - name: Create Directory
     file:
       path: /home/ec2-user/new_dir
       state: directory
 ...
+
 - name: Update n2 servers
   hosts: n2
 
@@ -28,6 +28,7 @@
     file:
       path: /home/ec2-user/new_dir
       state: directory
+
 
 - name: Update group1 servers
   hosts: g1
