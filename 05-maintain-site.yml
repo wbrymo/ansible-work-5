@@ -1,0 +1,10 @@
+---
+name: install httpd server
+  hosts: n2
+  become: yes
+
+- name: Copy file to remote server
+  copy:
+    src: /path/to/local/file.txt
+    dest: /path/to/remote/destination/file.txt
+...
