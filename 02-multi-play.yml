@@ -13,7 +13,7 @@
     file:
       path: /home/ec2-user/new_dir
       state: directory
-...
+
 
 - name: Update n2 servers
   hosts: n2
