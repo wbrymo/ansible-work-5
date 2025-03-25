@@ -1,0 +1,45 @@
+# ansible n1 -m file -a "path=/home/ec2-user/n1-dir state=directory"…..
+---
+- name: Update n1 servers
+  hosts: n1
+
+  tasks:
+  - name: Create Directory
+    file:
+      path: /home/ec2-user/new_dir
+      state: directory
+
+
+  - name: Create Directory
+    file:
+      path: /home/ec2-user/new_dir
+      state: directory
+...
+- name: Update n2 servers
+  hosts: n2
+
+  tasks:
+  - name: Create Directory
+    file:
+      path: /home/ec2-user/new_dir
+      state: directory
+
+  - name: Create Directory
+    file:
+      path: /home/ec2-user/new_dir
+      state: directory
+
+- name: Update group1 servers
+  hosts: g1
+
+  tasks:
+  - name: Create Directory
+    file:
+      path: /home/ec2-user/new_dir_group1
+      state: directory
+  
+  - name: Create Directory
+    file:
+      path: /home/ec2-user/new_dir_group1
+      state: directory
+...
