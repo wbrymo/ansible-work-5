@@ -19,5 +19,4 @@
     service:
       name: httpd
       enabled: yes
-      
 ...

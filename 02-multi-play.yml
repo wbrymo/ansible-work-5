@@ -43,4 +43,5 @@
     file:
       path: /home/ec2-user/new_dir_group1
       state: directory
+      
 ...
