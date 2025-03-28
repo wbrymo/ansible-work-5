@@ -1,0 +1,12 @@
+---
+
+- name: Static page
+  hosts: g1
+  become: yes
+
+  tasks:
+  - name: Review static page
+    template:
+     src: sdynamic.j2
+     dest: /var/www/html/static.html
+...
