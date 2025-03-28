@@ -4,7 +4,7 @@
   hosts: g1
   become: yes
   vars:
-    myusername: Wbrymo
+    ansible_username: Wbrymo
 
   tasks:
   - name: Update dynamic page
