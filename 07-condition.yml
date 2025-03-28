@@ -23,8 +23,7 @@
       enabled: yes
     when: ansible _distributon == "Amazon"
 
-  tasks:
-  - name: install apache2
+  - name: install Apache2
     apt:
       name: apache2
       state: present
