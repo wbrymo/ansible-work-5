@@ -1,0 +1,17 @@
+# ansible n1 -m file -a "path=/home/ec2-user/n1-dir state=directory"…..
+---
+- name: Deploy web app
+  hosts: g1
+  become: yes
+
+  tasks:
+  - name: install git
+    yum:
+      name: git
+      state: present
+
+  - name: host code
+    git:
+      repo: https://github.com/CeeyIT-Solutions/ecomm-3.git
+      dest: /var/www/html
+...
