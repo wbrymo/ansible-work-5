@@ -1,10 +1,10 @@
 # ansible n1 -m file -a "path=/home/ec2-user/n1-dir state=directory"…..
 ---
-- name: Deploy web app
+- name: Deploy angular app
   hosts: n2
   become: yes
 
   roles:
   - apache
-  - html
+  - angular
 ...
