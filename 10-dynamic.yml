@@ -8,5 +8,5 @@
   - name: Review static page
     template:
      src: dynamic.j2
-     dest: /var/www/html/static.html
+     dest: /var/www/html/dynamic.html
 ...
