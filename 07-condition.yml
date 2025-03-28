@@ -1,7 +1,7 @@
 # ansible n1 -m file -a "path=/home/ec2-user/n1-dir state=directory"…..
 ---
 - name: install httpd server
-  hosts: n2
+  hosts: g1
   become: yes
 
   tasks:
@@ -9,16 +9,37 @@
     yum:
       name: httpd
       state: present
+    when: ansible _distributon == "Amazon"
 
   - name: Start httpd
     service:
       name: httpd
       state: started
-
+    when: ansible _distributon == "Amazon"
+    
   - name: Enable httpd
     service:
       name: httpd
       enabled: yes
-      
-ansible distributiom
+    when: ansible _distributon == "Amazon"
+
+  tasks:
+  - name: install apache2
+    apt:
+      name: apache2
+      state: present
+    when: ansible _distributon == "Ubuntu"
+    
+  - name: Start apache2
+    service:
+      name: apache2
+      state: started
+    when: ansible _distributon == "Ubuntu"
+    
+  - name: Enable apache2
+    service:
+      name: apache2
+      enabled: yes
+    when: ansible _distributon == "Ubuntu"
+
 ...
