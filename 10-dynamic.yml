@@ -7,6 +7,6 @@
   tasks:
   - name: Review static page
     template:
-     src: sdynamic.j2
+     src: dynamic.j2
      dest: /var/www/html/static.html
 ...
