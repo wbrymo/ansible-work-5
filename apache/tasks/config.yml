@@ -1,0 +1,19 @@
+---
+- name: Deploy Static and Dynamic Pages
+  hosts: g1
+  become: yes
+
+  vars:
+
+  tasks:
+    - name: Review static page
+      copy:
+        src: static.html
+        dest: /var/www/html/static.html
+
+    - name: Review dynamic page
+      template:
+        src: dynamic.j2
+        dest: /var/www/html/dynamic.html
+
+...
