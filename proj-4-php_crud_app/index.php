@@ -3,9 +3,9 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$host = 'php-crud-db.cn42w2oio56m.us-east-1.rds.amazonaws.com';
+$host = 'localhost';
 $user = 'devops';
-$pass = 'Buraimoh7';
+$pass = 'password';
 $db = 'studentdb';
 
 $conn = new mysqli($host, $user, $pass, $db);
