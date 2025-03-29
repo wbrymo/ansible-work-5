@@ -1,5 +1,5 @@
 <?php
-$host = 'localhost';
+$host = 'php-crud-db.cn42w2oio56m.us-east-1.rds.amazonaws.com';
 $user = 'devops';
 $pass = 'password';
 $db = 'studentdb';
