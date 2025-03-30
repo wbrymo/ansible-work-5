@@ -1,9 +1,9 @@
 -- Create the database and user
 CREATE DATABASE IF NOT EXISTS studentdb;
-CREATE USER IF NOT EXISTS 'devops'@'172.31.17.13' IDENTIFIED BY 'Buraimoh7';
+CREATE USER IF NOT EXISTS 'devops'@'172.31.90.206' IDENTIFIED BY 'Buraimoh7';
 
 -- Grant privileges to the user for remote access
-GRANT ALL PRIVILEGES ON studentdb.* TO 'devops'@'172.31.17.13';
+GRANT ALL PRIVILEGES ON studentdb.* TO 'devops'@'172.31.90.206';
 FLUSH PRIVILEGES;
 
 -- (Optional) Create table and insert data
