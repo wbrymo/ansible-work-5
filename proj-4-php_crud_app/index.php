@@ -96,7 +96,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </html>
 """
 
-with open("/mnt/data/index.php", "w") as f:
-    f.write(php_crud_code)
-
-"/mnt/data/index.php created successfully!"
+CeeyIT!"
