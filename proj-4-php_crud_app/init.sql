@@ -1,20 +1,12 @@
--- Create the database and user
-CREATE DATABASE IF NOT EXISTS studentdb;
-CREATE USER IF NOT EXISTS 'devops'@'172.31.17.13' IDENTIFIED BY 'Buraimoh7';
-
--- Grant privileges to the user for remote access
-GRANT ALL PRIVILEGES ON studentdb.* TO 'devops'@'172.31.17.13';
-FLUSH PRIVILEGES;
-
--- (Optional) Create table and insert data
+CREATE DATABASE studentdb;
 USE studentdb;
 
-CREATE TABLE IF NOT EXISTS students (
+CREATE TABLE students (
   id INT AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(100),
   email VARCHAR(100)
 );
 
 INSERT INTO students (name, email) VALUES
-  ('Alice Smith', 'alice@example.com'),
-  ('Bob Johnson', 'bob@example.com');
+('Alice Smith', 'alice@example.com'),
+('Bob Johnson', 'bob@example.com');
