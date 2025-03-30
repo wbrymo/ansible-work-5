@@ -1,4 +1,3 @@
-# Let's generate the complete PHP single-page CRUD app with all functionality.
 php_crud_code = """<?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
