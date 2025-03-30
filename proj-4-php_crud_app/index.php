@@ -1,4 +1,3 @@
-php_crud_code = """<?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
@@ -93,6 +92,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </table>
 </body>
 </html>
-"""
 
-CeeyIT!"
+<br>
+CeeyIT!
